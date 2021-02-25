@@ -1,0 +1,126 @@
+
+html{
+	box-sizing: border-box;
+	height:100%;
+}
+
+*, *:before, *:after{
+	box-sizing: inherit;
+}
+
+body{
+	
+/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#e570e7+0,c85ec7+50,a849a3+100 */
+background: rgb(229,112,231); /* Old browsers */
+background: -moz-linear-gradient(top,  rgba(229,112,231,1) 0%, rgba(200,94,199,1) 50%, rgba(168,73,163,1) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top,  rgba(229,112,231,1) 0%,rgba(200,94,199,1) 50%,rgba(168,73,163,1) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom,  rgba(229,112,231,1) 0%,rgba(200,94,199,1) 50%,rgba(168,73,163,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e570e7', endColorstr='#a849a3',GradientType=0 ); /* IE6-9 */
+
+background-attachment:fixed;
+
+height:100%;
+
+font-family: Arial, Helvetica, sans-serif;
+}
+
+img{
+	max-width: 100%;
+}
+
+.contenedor{
+	max-width: 900px;
+	margin: 0 auto;
+	
+}
+
+header{
+	padding:40px 0;
+	text-align:center;	
+}
+
+h2{
+	color: #ffffff;
+	text-align: center;
+}
+
+/*ESTILOS PARA LA IMAGEN PRINCIPAL */
+
+.hero{
+	margin-bottom: 30px;
+}
+
+/*ESTILOS PARA LA LISTA DE PRODUCTOS*/
+
+.lista-productos{
+	padding: 0;
+	list-style: none;
+}
+
+.lista-productos li{
+	color: #ffffff;
+	float: left;
+	padding: 20px;
+	text-align: center;
+	width: 50%;					/*esta propiedad se puso aqui en este selector para que cada elemento de la lista
+								ocupe el 50% del espacio que existe en el contenedor, que es 1200px */
+}
+
+.lista-productos li:nth-child(2n+1){
+	clear: both;
+}
+
+.lista-productos li p{
+	font-size: 28px;
+	font-weight: bold;
+}
+
+span.precio{
+	color: #ffce00;
+	font-size: 40px;
+}
+
+.boton{
+	background-color: #ffce00;
+	color: #ffffff;
+	display: inline-block;
+	font-weight: bold;
+	margin-top: 10px;
+	padding: 10px 40px;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+
+.lista-productos li img{
+	border: 10px solid rgba(128,1,195,.45);
+}
+
+.lista-productos li img:hover{
+	border: 10px solid rgba(128,1,195,1);
+}
+
+
+
+
+@media (min-width:768px){
+	
+	.lista-productos li{
+		padding: 20px;
+		width: 33.3%;			/*esta propiedad se puso aqui en este selector para que cada elemento de la lista
+								ocupe el 33.3% del espacio que existe en el contenedor, que es 1200px y se coloquen
+								3 elementos */
+	}
+
+	.lista-productos li:nth-child(2n+1){ 
+		clear: unset;				/*esto deshabilita la anterior funcion, para que se aplique la de abajo*/
+	}
+
+	.lista-productos li:nth-child(3n+1){
+		clear: both;
+	}
+}
+
+
+
+
+
